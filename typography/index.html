@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Typography</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">    
+        <h1>CSS typography</h1>
+        <p class="secondary-text">Notes from various sources</p>
+        <h2>Importing fonts</h2>
+        <p>It used to be a pain in the arse but now we use @fontface and specify a url to the font file the browser can download then use .selector {font-family: 'name-of-font'} to use it on certain elements.</p>
+
+            Another option is to use an online font service such as google fonts or adobe typekit. These are a breeze to use as they host, serve and optiise the font for you(me). For the purpose of learning this tutorial I'll use Rubik from Google fonts.</p>
+        <h2>Font sizing</h2>
+        CSS has 15 different units for font sizing.
+They can be grouped in 2 categoiries:
+<ol>
+    <li>
+        Absolute such as px
+    </li>
+    <li>
+        Relative such as em
+    </li>
+</ol>
+<p>
+    Relative sizes take their cue from the parent element. So if a paragraph is set to 2em and its parent element, let's say a div, is set to 16px, that 1em in the paragraph translates to 32px.
+</p>    
+<h3>Typescale</h3>
+<p>Generally you'll want a range of sizes to use in your project.</p>
+
+<p>Cue, the typescale. It's a way to establish a range of harmonious font sizes that work well with each other. "More often than not, you’ll see hierarchies that are six level deep, which corresponds to the HTML heading elements, h1 through h6." Taimur Abdaal on https://css-tricks.com/typography-for-developers/</p>
+
+<p>Below I've used https://type-scale.com to generate a typescale.</p>
+
+<h4>Augumented forth - 1.414</h4>
+
+<ul>
+    <li>
+        5.653rem/90.44px
+    </li>
+    <li>
+        3.998rem/63.96px
+    </li>
+    <li>
+        2.827rem/45.23px
+    </li>
+    <li>
+        1.999rem/31.99px
+    </li>
+    <li>
+        1.414rem/22.62px
+    </li>
+    <li>
+        1rem/16.00px
+    </li>
+</ul>
+<h2>Vertical spacing</h2>
+<p>Usually achieved via the line-height property.</p>
+
+<p>Is a way to control the distance between lines of text. Usually the browser defaults to 1.2, but that is too tight. For long form text something closer to 1.5 works better.</p>
+
+<p>This combined with margins, padding etc. forms (vertical) rythm.</p>
+
+<h2>Horizontal spacing</h2>
+<p>Tracking is the space between letters of a word. It's controlled by the letter-spacing property. Ems are the preferred units of measurement.</p>
+
+<p>Line width - best practice for long form copy is to have between 60 and 70 characters per line. Use the ch unit. It is a relative unit define by the lentgh of tha character 0 (zero).</p>
+
+<p>"Because narrow characters like l and i are relatively frequent, setting the width of a text container to something like 50ch should result in lines that are 60-70 character long."</p>
+
+<h2>Antialiasing</h2>
+<p>Rendering gray pixels to make fonts appear smoother.</p>
+
+    <p>-webkit-font-smoothing - supported only on webkit browser but firefox and chrome must have an equivalent.</p>
+    </div>
+<div class="wrapper wrapper-footnote">
+    <h3>Sources</h3>
+    Taimur Abdaal / <a href="https://css-tricks.com/typography-for-developers/">Typography for developers</a> / <a href="https://css-tricks.com/">css-tricks.com</a>
+</div>
+</body>
+</html>

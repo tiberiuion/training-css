@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* 
+Importing fonts
+Tl;dr
+
+It used to be a pain in the arse but now we use @fontface and specify a url to the font file the browser can download then use .selector {font-family: 'name-of-font'} to use it on certain elements.
+
+Another option is to use an online font service such as google fonts or adobe typekit. These are a breeze to use as they host, serve and optiise the font for you(me). For the purpose of learning this tutorial I'll use Rubik from Google fonts.
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap&test=typography");
+/* Font sizing
+CSS has 15 different units for font sizing.
+They can be grouped in 2 categoiries:
+1. Absolute such as px
+2. Relative such as em
+
+Relative sizes take their cue from the parent element. So if a paragraph is set to 2em and its parent element, let's say a div, is set to 16px, that 1em in the paragraph translates to 32px.
+*/
+/*
+Typescale
+Generally you'll want a range of sizes to use in your project.
+
+Cue, the typescale. It's a way to establish a range of harmonious font sizes that work well with each other. "More often than not, you’ll see hierarchies that are six level deep, which corresponds to the HTML heading elements, h1 through h6." Taimur Abdaal on https://css-tricks.com/typography-for-developers/
+
+Below I've used https://type-scale.com to generate a typescale.
+
+Augumented forth - 1.414
+
+5.653rem/90.44px
+3.998rem/63.96px
+2.827rem/45.23px
+1.999rem/31.99px
+1.414rem/22.62px
+1rem/16.00px 
+*/
+/* Vertical spacing
+
+Usually achieved via the line-height property.
+
+Is a way to control the distance between lines of text. Usually the browser defaults to 1.2, but that is too tight. For long form text something closer to 1.5 works better.
+
+This combined with margins, padding etc. forms (vertical) rythm.
+
+*/
+/* Horizontal Shape
+
+Tracking is the space between letters of a word. It's controlled by the letter-spacing property.Ems are the preferred units of measurement.
+
+Line width - best practice for long form copy is to have between 60 and 70 characters per line. Use the ch unit. It is a relative unit define by the lentgh of tha character 0 (zero).
+
+"Because narrow characters like l and i are relatively frequent, setting the width of a text container to something like 50ch should result in lines that are 60-70 character long."
+*/
+/* Antialiasing
+
+Rendering gray pixels to make fonts appear smoother.
+
+-webkit-font-smoothing - supported only on webkit browser but firefox and chrome must have an equivalent.
+*/
+/* set base font size */
+body {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  background: rgba(186, 163, 136, 0.9);
+}
+
+/* vertical */
+p {
+  line-height: 1.5em;
+  max-width: 70ch;
+}
+
+h2, h3, h4 {
+  margin: 1em 0 0.5em 0;
+}
+
+h1 {
+  font-size: 5.653em;
+  line-height: 0.9em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3.998em;
+  line-height: 32px;
+}
+
+h3 {
+  font-size: 2.827em;
+}
+
+.wrapper {
+  max-width: 40em;
+  padding: 2em;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 8px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  margin: 0 auto;
+  background: rgba(255, 250, 250, 0.4);
+}
+
+.wrapper-footnote {
+  margin: 2em auto;
+}/*# sourceMappingURL=main.css.map */
