@@ -1,5 +1,12 @@
-h1 {
-  color: blueviolet;
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wdth,wght@100..125,200..800&display=swap");
+/* SCSS HEX */
+body {
+  background: #f5e5fc;
+  font-family: "BioRhyme", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 /*# sourceMappingURL=style.css.map */
