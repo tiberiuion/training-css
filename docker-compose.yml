@@ -1,9 +1,10 @@
 services:
-  css-dev:
+  app:
     build: .
     volumes:
       - .:/app
     ports:
       - "3000:3000"
-    command: >
-      bash -c "sass --watch --poll ./scss:./css & browser-sync start --server --files 'css/*.css, *.html'"
+    working_dir: /app  # Set the working directory
+    stdin_open: true  # Keep STDIN open for interactive sessions
+    tty: true  # Allocate a pseudo-TTY
