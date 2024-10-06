@@ -1,12 +1,41 @@
-@use 'colours';
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wdth,wght@100..125,200..800&display=swap');
-
+@import 'colours';
+@import 'typography';
 body {
-    background: colours.$pale-purple;
+    background: $pale-purple;
     font-family: "BioRhyme", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+  font-size: 64px;
+  text-align: center;
+  color: $dark-purple;
+  text-transform: uppercase;
+}
+
+nav {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+a {
+  text-decoration: none;
+  color:  $picton-blue;
+  padding: 1rem ;
+  border-radius: 100%;
+  &:hover {
+    background: $picton-blue;
+    color: $pale-purple;
+  }
 }

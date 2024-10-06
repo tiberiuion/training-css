@@ -7,6 +7,33 @@ body {
   font-weight: 300;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 64px;
+  text-align: center;
+  color: #3a3042;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #00a7e1;
+  padding: 1rem;
+  border-radius: 100%;
+}
+a:hover {
+  background: #00a7e1;
+  color: #f5e5fc;
 }
 
 /*# sourceMappingURL=style.css.map */
