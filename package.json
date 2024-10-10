@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch scss:css landing-page/src:/landing-page/src --poll",
-    "browser-sync": "browser-sync start --server --files 'css/*.css, landing-page/src/*.css, index.html, landing-page/src/*.html'",
+    "browser-sync": "browser-sync start --server --files 'css/*.css, index.html, landing-page/src/*.css, landing-page/src/*.html' --no-open",
     "dev": "npm-run-all --parallel sass browser-sync"
   },
   "author": "",
