@@ -17,3 +17,6 @@ Run the Docker image. The command below will start up a container using the imag
 
 This attaches an interactive terminal so you can start/stop development services such as sass and browser-sync just as you would on a local machine.
 `docker-compose exec app bash`
+
+## Todo
+[] Optimise watch script so it picks up scss files in root/project-name/src/file.scss
