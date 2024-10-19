@@ -9,3 +9,7 @@ This is a redesign of the VS Codium landing page, focused on improving the user 
 - Support for multiple platform downloads (Windows, macOS, Linux)
 - Section highlighting VS Codium's advantages (open-source, privacy-focused)
 - Integration with GitHub for contributions and community links
+
+## Todo 
+[] Main nav item hover effect
+[] Set up typography scale in SCSS.
