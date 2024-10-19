@@ -43,6 +43,11 @@ nav a {
   border-radius: 4rem;
   background: rgb(230.6448979592, 236.0571428571, 253.8551020408);
 }
+nav a:hover {
+  color: rgb(108.8693877551, 141.3428571429, 248.1306122449);
+  background: rgb(206.2897959184, 217.1142857143, 252.7102040816);
+  transition: all 0.2s ease;
+}
 nav .brand a {
   display: flex;
   align-items: center;

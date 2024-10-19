@@ -58,6 +58,11 @@ nav {
         padding: 0.2rem 1rem;
         border-radius: 4rem;
         background: color.change($primary, $lightness: 95%) ;
+        &:hover {
+            color: color.change($primary,  $lightness: 70%);
+            background: color.change($primary, $lightness: 90%) ;
+            transition: all 0.2s ease;
+        }
     }
     .brand {
         a {
