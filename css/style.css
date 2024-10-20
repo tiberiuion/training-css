@@ -1,5 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #B6546C;
+  text-decoration-line: wavy;
+  -webkit-text-decoration: wavy;
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Modak", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(38.76, 2.04, 11.0326530612);
+}
+
+body {
+  font-family: "Fira Sans", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: rgb(245.8032786885, 247.9979508197, 236.5020491803);
+}
+
 h1 {
-  color: blueviolet;
+  text-align: center;
+}
+
+nav ul {
+  max-width: 50vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul a {
+  background: rgb(239.7418032787, 219.2581967213, 224.2745901639);
+  padding: 0.4rem 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(252.45, 206.55, 217.7908163265);
+}
+nav ul a:hover {
+  transition: all 0.5s ease;
+  background: rgb(249.9, 234.6, 238.3469387755);
+  border: 1px solid rgb(255, 229.5, 235.7448979592);
+  color: rgb(193.9672131148, 112.0327868852, 132.0983606557);
 }
 
 /*# sourceMappingURL=style.css.map */

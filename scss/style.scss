@@ -1,3 +1,68 @@
-h1 {
-    color: blueviolet;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+// Colours
+$primary: #A7BC4E;
+$secondary: #B6546C;
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+a {
+    color: $secondary;
+    text-decoration-line: wavy;
+    -webkit-text-decoration: wavy;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: change-color($secondary, $saturation: 90%, $lightness: 8%)
+}
+
+body {
+    font-family: "Fira Sans", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background: change-color($primary, $lightness: 95%);
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    
+    ul {
+        max-width: 50vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        
+        a {
+            background: change-color($secondary, $lightness: 90%);
+            padding: 0.4rem 1.2rem;
+            border-radius: 1rem;
+            border: 1px solid change-color($secondary, $saturation: 90%, $lightness: 90%);
+            &:hover {
+                transition: all 0.5s ease;
+                background: change-color($secondary, $saturation: 60%, $lightness: 95%);
+                border: 1px solid change-color($secondary, $saturation: 100%, $lightness: 95%);
+                color: change-color($secondary, $lightness: 60% );
+            }
+        }
+    }
+}
+
