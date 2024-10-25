@@ -74,4 +74,8 @@ nav > ul .main-nav {
   grid-auto-columns: 1fr;
 }
 
+.header {
+  background: #0B3FEA;
+}
+
 /*# sourceMappingURL=style-landing-page.css.map */
