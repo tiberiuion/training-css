@@ -1,39 +1,63 @@
-@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wdth,wght@100..125,200..800&display=swap");
-/* SCSS HEX */
-body {
-  background: #f5e5fc;
-  font-family: "BioRhyme", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  font-size: 18px;
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
+ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-h1 {
-  font-size: 64px;
+a {
+  color: #B6546C;
+  text-decoration-line: wavy;
+  -webkit-text-decoration: wavy;
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Modak", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(38.76, 2.04, 11.0326530612);
+}
+
+body {
+  font-family: "Fira Sans", system-ui;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
-  color: #3a3042;
-  text-transform: uppercase;
+}
+
+body {
+  background: rgb(245.8032786885, 247.9979508197, 236.5020491803);
+}
+
+h1 {
+  text-align: center;
+  font-size: 7rem;
+  margin: 0;
+  padding: 0;
+  color: #A7BC4E;
 }
 
 nav ul {
-  list-style: none;
+  max-width: 50vw;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
-
-a {
-  text-decoration: none;
-  color: #00a7e1;
-  padding: 1rem;
-  border-radius: 100%;
+nav ul a {
+  background: rgb(239.7418032787, 219.2581967213, 224.2745901639);
+  padding: 0.4rem 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(252.45, 206.55, 217.7908163265);
 }
-a:hover {
-  background: #00a7e1;
-  color: #f5e5fc;
+nav ul a:hover {
+  transition: all 0.5s ease;
+  background: rgb(249.9, 234.6, 238.3469387755);
+  border: 1px solid rgb(255, 229.5, 235.7448979592);
+  color: rgb(193.9672131148, 112.0327868852, 132.0983606557);
 }
 
 /*# sourceMappingURL=style.css.map */
