@@ -15,7 +15,8 @@ $sizes: (
 );
 
 @function typescale($step) {
-    @return $base-font-size * pow($ratio, $step) * 1px;
+    $raw-size: $base-font-size * pow($ratio, $step);
+    @return round($raw-size * 1000) / 1000 * 1px;
   };
 
 // Loop through $sizes map to generate font size classes
