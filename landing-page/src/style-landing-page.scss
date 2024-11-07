@@ -1,5 +1,5 @@
 @use 'sass:color';
-@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wdth,wght@100..125,200..800&display=swap');
+@use 'typography'; 
 
 // Colours
 $primary: #2A9134;
@@ -25,21 +25,15 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    font-variation-settings: "wdth" 100;
 }
 
-h1, h2, h3, h4, h5 , h6, h7 {
+h1, h2, h3, h4, h5 , h6 {
     font-family: "BioRhyme", serif;
     font-weight: 300;
     font-style: normal;
     margin: 0;
     font-variation-settings: "wdth" 100;
-
-}
-
-h1 {
-    font-size: typescale(7)
 }
 
 nav {
